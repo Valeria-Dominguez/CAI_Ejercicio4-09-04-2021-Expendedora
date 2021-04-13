@@ -35,7 +35,7 @@ namespace EjExpendedora.Libreria.Entidades
             capRest = 0;
             return capRest;
         }
-        void EncenderMAquina()
+        void EncenderMaquina()
         {
             _encendida = true;
         }
