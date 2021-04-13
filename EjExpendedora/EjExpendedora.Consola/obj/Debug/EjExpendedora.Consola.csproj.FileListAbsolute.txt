@@ -1,0 +1,10 @@
+C:\Users\Valeria\Downloads\CAI\Ejercicios\CAI_Ejercicio4-09-04-2021-Expendedora\EjExpendedora\EjExpendedora.Consola\obj\Debug\EjExpendedora.Consola.csprojAssemblyReference.cache
+C:\Users\Valeria\Downloads\CAI\Ejercicios\CAI_Ejercicio4-09-04-2021-Expendedora\EjExpendedora\EjExpendedora.Consola\obj\Debug\EjExpendedora.Consola.csproj.CoreCompileInputs.cache
+C:\Users\Valeria\Downloads\CAI\Ejercicios\CAI_Ejercicio4-09-04-2021-Expendedora\EjExpendedora\EjExpendedora.Consola\bin\Debug\EjExpendedora.Consola.exe.config
+C:\Users\Valeria\Downloads\CAI\Ejercicios\CAI_Ejercicio4-09-04-2021-Expendedora\EjExpendedora\EjExpendedora.Consola\bin\Debug\EjExpendedora.Consola.exe
+C:\Users\Valeria\Downloads\CAI\Ejercicios\CAI_Ejercicio4-09-04-2021-Expendedora\EjExpendedora\EjExpendedora.Consola\bin\Debug\EjExpendedora.Consola.pdb
+C:\Users\Valeria\Downloads\CAI\Ejercicios\CAI_Ejercicio4-09-04-2021-Expendedora\EjExpendedora\EjExpendedora.Consola\bin\Debug\EjExpendedora.Libreria.dll
+C:\Users\Valeria\Downloads\CAI\Ejercicios\CAI_Ejercicio4-09-04-2021-Expendedora\EjExpendedora\EjExpendedora.Consola\bin\Debug\EjExpendedora.Libreria.pdb
+C:\Users\Valeria\Downloads\CAI\Ejercicios\CAI_Ejercicio4-09-04-2021-Expendedora\EjExpendedora\EjExpendedora.Consola\obj\Debug\EjExpendedora.Consola.csproj.CopyComplete
+C:\Users\Valeria\Downloads\CAI\Ejercicios\CAI_Ejercicio4-09-04-2021-Expendedora\EjExpendedora\EjExpendedora.Consola\obj\Debug\EjExpendedora.Consola.exe
+C:\Users\Valeria\Downloads\CAI\Ejercicios\CAI_Ejercicio4-09-04-2021-Expendedora\EjExpendedora\EjExpendedora.Consola\obj\Debug\EjExpendedora.Consola.pdb

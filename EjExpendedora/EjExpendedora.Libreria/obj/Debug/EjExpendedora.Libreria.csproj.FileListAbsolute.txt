@@ -1,0 +1,6 @@
+C:\Users\Valeria\Downloads\CAI\Ejercicios\CAI_Ejercicio4-09-04-2021-Expendedora\EjExpendedora\EjExpendedora.Libreria\bin\Debug\EjExpendedora.Libreria.dll
+C:\Users\Valeria\Downloads\CAI\Ejercicios\CAI_Ejercicio4-09-04-2021-Expendedora\EjExpendedora\EjExpendedora.Libreria\bin\Debug\EjExpendedora.Libreria.pdb
+C:\Users\Valeria\Downloads\CAI\Ejercicios\CAI_Ejercicio4-09-04-2021-Expendedora\EjExpendedora\EjExpendedora.Libreria\obj\Debug\EjExpendedora.Libreria.csprojAssemblyReference.cache
+C:\Users\Valeria\Downloads\CAI\Ejercicios\CAI_Ejercicio4-09-04-2021-Expendedora\EjExpendedora\EjExpendedora.Libreria\obj\Debug\EjExpendedora.Libreria.csproj.CoreCompileInputs.cache
+C:\Users\Valeria\Downloads\CAI\Ejercicios\CAI_Ejercicio4-09-04-2021-Expendedora\EjExpendedora\EjExpendedora.Libreria\obj\Debug\EjExpendedora.Libreria.dll
+C:\Users\Valeria\Downloads\CAI\Ejercicios\CAI_Ejercicio4-09-04-2021-Expendedora\EjExpendedora\EjExpendedora.Libreria\obj\Debug\EjExpendedora.Libreria.pdb
