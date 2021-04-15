@@ -23,5 +23,59 @@ namespace EjExpendedora.Libreria.Validaciones
             while (valor == "");
             return valor;
         }
+        public static uint ValidarUint (string mensaje)
+        {
+            uint valor;
+            do
+            {
+                Console.WriteLine(mensaje);
+                if(!uint.TryParse(Console.ReadLine(), out valor))
+                {
+                    valor = 429496795;
+                }
+                if (valor== 429496795)
+                {
+                    Console.WriteLine("Debe ingresar un valor entero positivo");
+                }
+            }
+            while (valor == 0);
+            return valor;
+        }
+        public static int ValidarInt(string mensaje)
+        {
+            int valor;
+            do
+            {
+                Console.WriteLine(mensaje);
+                if (!int.TryParse(Console.ReadLine(), out valor))
+                {
+                    valor = 2147483647;
+                }
+                if (valor == 2147483647)
+                {
+                    Console.WriteLine("Debe ingresar un valor entero positivo");
+                }
+            }
+            while (valor == 0);
+            return valor;
+        }
+        public static double ValidarDoubleMayorACero(string mensaje)
+        {
+            double valor;
+            do
+            {
+                Console.WriteLine(mensaje);
+                if (!double.TryParse(Console.ReadLine(), out valor))
+                {
+                    valor = 0;
+                }
+                if (valor == 0)
+                {
+                    Console.WriteLine("Debe ingresar un valor positivo");
+                }
+            }
+            while (valor == 0);
+            return valor;
+        }
     }
 }
