@@ -75,10 +75,22 @@ namespace EjExpendedora.Libreria.Entidades
             return valor;
         }
 
-        public void ExtraerLata(string codigo, int cantidad, double dinero)
-        {
-            this.ModificarStockLata(codigo, -cantidad);
-            this.SumarDinero(dinero);
+        public string ExtraerLata(string codigo, int cantidad, double dineroCliente, double totalAPagar)
+        {            
+            double vuelto = dineroCliente-totalAPagar;
+
+            if (vuelto > _dinero)
+            {
+                return ("La operación no pudo realizarse, la máquina no puede dar $" + vuelto + " de vuelto\n");
+            }
+            else
+            {
+                this.SumarDinero(totalAPagar);
+                return "Operación exitosa, su vuelto es $ " + vuelto.ToString();
+
+                this.ModificarStockLata(codigo, -cantidad);
+
+            }
         }
 
         public string GetBalance()
@@ -101,9 +113,9 @@ namespace EjExpendedora.Libreria.Entidades
             return valor;
         }
 
-        void SumarDinero(double dinero)
+        void SumarDinero(double dineroCliente)
         {
-            this._dinero = this._dinero + dinero;
+            this._dinero = this._dinero + dineroCliente;
         }
 
         public void ModificarStockLata(string codigo, int cantidad)

@@ -69,12 +69,12 @@ namespace EjExpendedora.Libreria.Validaciones
                 {
                     valor = 0;
                 }
-                if (valor == 0)
+                if (valor <= 0)
                 {
                     Console.WriteLine("Debe ingresar un valor positivo");
                 }
             }
-            while (valor == 0);
+            while (valor <= 0);
             return valor;
         }
     }
