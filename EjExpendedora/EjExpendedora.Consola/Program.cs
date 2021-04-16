@@ -108,7 +108,7 @@ namespace EjExpendedora.Consola
 
                 if (capacidadRestanteExpendedora == 0)
                 {
-                    throw new CapacidadInsuficienteException("Capacidad insuficiente\n");
+                    throw new CapacidadInsuficienteException();
                 }
 
                 //Agrego primero validar si con la cantidad de latas a ingresar se supera la capacidad
@@ -116,32 +116,30 @@ namespace EjExpendedora.Consola
                 cantidadLata = (int)Validaciones.ValidarUint("Ingrese cantidad de latas\n");
                 if (capacidadRestanteExpendedora - cantidadLata < 0)
                 {
-                    Console.WriteLine("La cantidad de latas a ingresar supera la capacidad máxima");
+                    throw new CapacidadInsuficienteException("La cantidad de latas a ingresar supera la capacidad máxima");
+                }
+
+                string codigoLata;
+                codigoLata = Validaciones.ValidarStrNoVac("Ingrese código de lata\n");
+                Lata lataEncontrada;
+                lataEncontrada = expendedora.BuscarCodigoDevuelveLata(codigoLata);
+                if (lataEncontrada != null)
+                {
+                    expendedora.ModificarStockLata(codigoLata, cantidadLata);
+                    Console.WriteLine("Ingreso exitoso");
                 }
                 else
                 {
-                    string codigoLata;
-                    codigoLata = Validaciones.ValidarStrNoVac("Ingrese código de lata\n");
-                    Lata lataEncontrada;
-                    lataEncontrada = expendedora.BuscarCodigoDevuelveLata(codigoLata);
-                    if (lataEncontrada != null)
-                    {
-                        expendedora.ModificarStockLata(codigoLata, cantidadLata);
-                        Console.WriteLine("Ingreso exitoso");
-                    }
-                    else
-                    {
-                        double precioLata;
-                        double volumenLata;
-                        string nombreLata;
-                        string saborLata;
-                        precioLata = Validaciones.ValidarDoubleMayorACero("Ingrese precio de la lata\n");
-                        volumenLata = Validaciones.ValidarDoubleMayorACero("Ingrese volumen de la lata\n");
-                        nombreLata = Validaciones.ValidarStrNoVac("Ingrese nombre de la lata\n");
-                        saborLata = Validaciones.ValidarStrNoVac("Ingrese sabor de la lata\n");
-                        expendedora.AgregarLata(codigoLata, precioLata, volumenLata, cantidadLata, nombreLata, saborLata);
-                        Console.WriteLine("Ingreso exitoso");
-                    }
+                    double precioLata;
+                    double volumenLata;
+                    string nombreLata;
+                    string saborLata;
+                    precioLata = Validaciones.ValidarDoubleMayorACero("Ingrese precio de la lata\n");
+                    volumenLata = Validaciones.ValidarDoubleMayorACero("Ingrese volumen de la lata\n");
+                    nombreLata = Validaciones.ValidarStrNoVac("Ingrese nombre de la lata\n");
+                    saborLata = Validaciones.ValidarStrNoVac("Ingrese sabor de la lata\n");
+                    expendedora.AgregarLata(codigoLata, precioLata, volumenLata, cantidadLata, nombreLata, saborLata);
+                    Console.WriteLine("Ingreso exitoso");
                 }
             }
         }
@@ -167,7 +165,7 @@ namespace EjExpendedora.Consola
 
                 if (lataEncontrada==null)
                 {
-                    throw new CodigoInvalidoException("Código inválido\n");
+                    throw new CodigoInvalidoException();
                 }
 
                 int cantidadLata;

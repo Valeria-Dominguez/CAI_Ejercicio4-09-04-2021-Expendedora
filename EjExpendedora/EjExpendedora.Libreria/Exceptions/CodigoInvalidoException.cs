@@ -8,7 +8,7 @@ namespace EjExpendedora.Libreria.Exceptions
 {
     public class CodigoInvalidoException : Exception
     {
-        public CodigoInvalidoException()
+        public CodigoInvalidoException() : base ("Código inválido\n")
         {
 
         }

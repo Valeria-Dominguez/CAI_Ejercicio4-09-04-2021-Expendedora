@@ -8,7 +8,7 @@ namespace EjExpendedora.Libreria.Exceptions
 {
     public class CapacidadInsuficienteException : Exception
     {
-        public CapacidadInsuficienteException()
+        public CapacidadInsuficienteException() : base ("Capacidad insuficiente\n")
         {
 
         }
