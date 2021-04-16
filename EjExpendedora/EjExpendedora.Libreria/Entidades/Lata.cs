@@ -43,7 +43,7 @@ namespace EjExpendedora.Libreria.Entidades
 
         internal string DescripCompleta()
         {
-            string descripcion = string.Format("{0} - {1} $ {2} / $/L {3} - [{4}]",this._nombre, this._sabor, this._precio, this.GetPrecioPorLitro(),this._cantidad);
+            string descripcion = string.Format("{0} - {1} $ {2} / $/L {3:0.00} - [{4}]",this._nombre, this._sabor, this._precio, this.GetPrecioPorLitro(),this._cantidad);
             return descripcion.ToString();
         }
 

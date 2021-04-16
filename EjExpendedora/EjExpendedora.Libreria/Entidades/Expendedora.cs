@@ -49,7 +49,7 @@ namespace EjExpendedora.Libreria.Entidades
         {
             if (EstaVacia() == true)
             {
-                return "La maquina está vacía";
+                return "La maquina está vacía\n";
             }
             else
             {
@@ -70,7 +70,7 @@ namespace EjExpendedora.Libreria.Entidades
             string valor = "";
             foreach (Lata lata in _latas)
             {
-                valor = valor + lata.DescripSimple() + "\n";                
+                valor = valor + lata.DescripSoloCodigo() + "\n";                
             }
             return valor;
         }
@@ -84,8 +84,7 @@ namespace EjExpendedora.Libreria.Entidades
         public string GetBalance()
         {
             string descripción;
-            descripción = "La máquina tiene $ " + _dinero + " La cantidad de latas en stock es " + (_capacidad - _capacidadRestante) + "\n";
-            
+            descripción = "La máquina tiene $ " + _dinero + " La cantidad de latas en stock es " + (_capacidad - _capacidadRestante) + "\n";            
             return descripción.ToString(); 
         }
 

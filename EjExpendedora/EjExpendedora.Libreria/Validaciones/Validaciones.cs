@@ -38,7 +38,7 @@ namespace EjExpendedora.Libreria.Validaciones
                     Console.WriteLine("Debe ingresar un valor entero positivo");
                 }
             }
-            while (valor == 0);
+            while (valor == 429496795);
             return valor;
         }
         public static int ValidarInt(string mensaje)
